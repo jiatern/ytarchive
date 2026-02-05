@@ -1470,6 +1470,7 @@ func (di *DownloadInfo) GetVideoInfoFromYtdlp() bool {
 			if !di.InfoPrinted {
 				if ytdlpInfo.Channel != "" {
 					LogGeneral("Channel: %s\n", ytdlpInfo.Channel)
+					LogGeneral("VideoID: %s\n", VideoID)
 				}
 				if title := ytdlpInfo.DisplayTitle(); title != "" {
 					LogGeneral("Video Title: %s\n", title)
@@ -1521,6 +1522,7 @@ func (di *DownloadInfo) GetVideoInfoFromYtdlp() bool {
 		if !di.InfoPrinted {
 			if ytdlpInfo.Channel != "" {
 				LogGeneral("Channel: %s\n", ytdlpInfo.Channel)
+				LogGeneral("VideoID: %s\n", VideoID)
 			}
 			if title := ytdlpInfo.DisplayTitle(); title != "" {
 				LogGeneral("Video Title: %s\n", title)
@@ -1582,6 +1584,7 @@ func (di *DownloadInfo) GetVideoInfoFromYtdlp() bool {
 	if !di.InfoPrinted {
 		if ytdlpInfo.Channel != "" {
 			LogGeneral("Channel: %s\n", ytdlpInfo.Channel)
+			LogGeneral("VideoID: %s\n", VideoID)
 		}
 		if title := ytdlpInfo.DisplayTitle(); title != "" {
 			LogGeneral("Video Title: %s\n", title)
