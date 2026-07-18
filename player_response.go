@@ -470,6 +470,7 @@ func (di *DownloadInfo) GetPlayablePlayerResponse() (retrieved int, pr *PlayerRe
 
 		if !di.InfoPrinted && len(pr.VideoDetails.Title) > 0 && len(pr.VideoDetails.Author) > 0 {
 			LogGeneral("Channel: %s\n", pr.VideoDetails.Author)
+			LogGeneral("VideoID: %s\n", pr.VideoDetails.VideoID)
 			LogGeneral("Video Title: %s\n", pr.VideoDetails.Title)
 			di.InfoPrinted = true
 		}
