@@ -1023,7 +1023,7 @@ func run() int {
 
 			status += fmt.Sprintf("Video Fragments: %d; Audio Fragments: %d; ", info.DLState[info.Quality].Fragments, info.DLState[AudioItag].Fragments)
 			if verbose {
-				status += fmt.Sprintf("Max Fragments: %d; Max Sequence: %d; ", (maxSeq - progress.StartFrag), maxSeq)
+				status += fmt.Sprintf("Max Fragments: %d; Max Sequence: %d; ", (maxSeq - progress.StartFrag + 1), maxSeq)
 			}
 
 			status += fmt.Sprintf("Total Downloaded: %s", FormatSize(totalBytes))
